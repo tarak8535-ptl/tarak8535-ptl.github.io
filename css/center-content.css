@@ -1,0 +1,21 @@
+/* Center content styles */
+.hero-content .col-lg-10 {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding-top: 80px; /* Add padding to prevent overlap with navbar */
+}
+
+.modern-card {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.mb-4.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

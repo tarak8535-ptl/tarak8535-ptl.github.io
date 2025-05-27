@@ -1,0 +1,128 @@
+/* Responsive scaling for all elements */
+
+/* Base responsive container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Modern card responsive scaling */
+.modern-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Text scaling */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  .modern-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  .service-item {
+    padding: 8px;
+  }
+  .intro-text {
+    font-size: 0.85rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+  .modern-card {
+    padding: 0.75rem;
+  }
+  .intro-tags {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro-tag {
+    margin: 2px;
+    font-size: 0.7rem;
+  }
+  .service-item {
+    margin-bottom: 10px;
+  }
+  .company-badge {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .company-badge i {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+  .modern-card {
+    padding: 0.5rem;
+  }
+  .btn-modern.btn-xl {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    margin: 5px 2px;
+  }
+  .stats-counter {
+    font-size: 1.8rem;
+  }
+  .stats-label {
+    font-size: 0.7rem;
+  }
+  .skill-badge {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+    margin: 2px;
+  }
+}
+
+/* Flexbox utilities for responsive layouts */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Prevent overflow issues */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure buttons stack properly on small screens */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Ensure service items remain readable */
+.service-text p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Ensure certification cards scale properly */
+.cert-card {
+  height: auto;
+  min-height: 100%;
+}

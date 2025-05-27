@@ -1,0 +1,41 @@
+/* Absolute centering for hero content */
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.masthead .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.hero-content {
+  margin: 0;
+  padding: 0;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure the content is centered within the viewport */
+@media (min-height: 800px) {
+  .masthead {
+    height: 100vh;
+  }
+}
+
+/* Fix for navbar overlap */
+.masthead .container {
+  margin-top: 60px;
+}
