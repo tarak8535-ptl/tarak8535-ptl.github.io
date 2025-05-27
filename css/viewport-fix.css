@@ -1,0 +1,55 @@
+/* Viewport fixes for better responsive behavior */
+
+/* Ensure proper viewport settings */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+/* Fix for iOS text size adjustment */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Ensure all elements respect the box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive card class */
+.responsive-card {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Ensure content doesn't overflow containers */
+.container {
+  overflow: hidden;
+}
+
+/* Media query for very small devices */
+@media (max-width: 360px) {
+  .btn-modern {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+  
+  .intro-tag {
+    padding: 2px 5px;
+    font-size: 0.65rem;
+  }
+}

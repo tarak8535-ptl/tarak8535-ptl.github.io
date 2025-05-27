@@ -6,9 +6,14 @@
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   position: relative;
-  padding-bottom: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 0;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes gradient {
@@ -53,6 +58,9 @@
   transition: all 0.3s ease;
   font-size: 0.95rem;
   line-height: 1.5;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
 }
 
 .modern-card:hover {
@@ -92,6 +100,10 @@
 .hero-content {
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-overlay {
@@ -187,12 +199,19 @@
   color: #3a86ff;
   margin-bottom: 0;
   line-height: 1.1;
+  text-align: center;
 }
 
 .stats-label {
   font-size: 0.85rem;
   color: var(--dark-text-muted);
   margin-top: -5px;
+  text-align: center;
+}
+
+.row.mt-3.mb-3 {
+  justify-content: center;
+  text-align: center;
 }
 
 /* Responsive adjustments */
