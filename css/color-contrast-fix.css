@@ -1,0 +1,58 @@
+/* Color contrast fixes for dark/light mode */
+
+/* Badge fixes */
+.badge.bg-light {
+  background-color: rgba(58, 134, 255, 0.2) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(58, 134, 255, 0.4);
+}
+
+/* Text muted with better contrast */
+.text-muted {
+  color: #b3b3b3 !important;
+}
+
+.card-subtitle.text-muted {
+  color: #b3b3b3 !important;
+}
+
+/* List items in cards */
+.card-body ul li {
+  color: #ffffff;
+}
+
+/* Skill badges with better contrast */
+.skill-badge {
+  color: #ffffff !important;
+  background: rgba(58, 134, 255, 0.3) !important;
+}
+
+.skill-badge.small {
+  color: #ffffff !important;
+  background: rgba(58, 134, 255, 0.3) !important;
+}
+
+/* Intro tags with better contrast */
+.intro-tag {
+  color: #ffffff !important;
+}
+
+/* Button text contrast */
+.btn-modern.btn-light {
+  color: #ffffff !important;
+}
+
+/* Card text */
+.card-text {
+  color: #e0e0e0 !important;
+}
+
+/* Project skills */
+.project-skills .skill-tag {
+  color: #ffffff !important;
+}
+
+/* Service text */
+.service-text p {
+  color: #ffffff !important;
+}

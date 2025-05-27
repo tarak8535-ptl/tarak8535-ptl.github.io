@@ -2,7 +2,7 @@
 
 /* Modern masthead with animated gradient background */
 .masthead {
-  background: linear-gradient(-45deg, #121212, #1e1e1e, #2a2a72, #0a66c2);
+  background: linear-gradient(-45deg, #121212, #1a1a2e, #2a2a72, #0a66c2);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   position: relative;
@@ -46,8 +46,8 @@
 /* Modern card styles */
 .modern-card {
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(37, 37, 37, 0.7);
+  border: 1px solid rgba(58, 134, 255, 0.2);
+  background: rgba(26, 26, 46, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -149,6 +149,9 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background-color: rgba(58, 134, 255, 0.2);
+  border: 1px solid rgba(58, 134, 255, 0.4);
+  color: #fff;
 }
 
 .btn-modern:after {
@@ -168,7 +171,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(58, 134, 255, 0.4);
   transition: all 0.3s;
   z-index: -1;
 }
