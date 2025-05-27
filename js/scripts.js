@@ -57,3 +57,40 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// LinkedIn Integration Functions
+function initLinkedInIntegration() {
+    // LinkedIn profile URL
+    const linkedinProfileUrl = 'https://www.linkedin.com/in/rushi-patel-888440166/';
+    
+    // Update LinkedIn profile links
+    const linkedinElements = document.querySelectorAll('.linkedin-profile-link');
+    linkedinElements.forEach(element => {
+        element.href = linkedinProfileUrl;
+    });
+    
+    // Update last refreshed timestamp
+    const lastUpdatedElements = document.querySelectorAll('.profile-last-updated');
+    const currentDate = new Date();
+    lastUpdatedElements.forEach(element => {
+        element.textContent = `Profile last updated: ${currentDate.toLocaleDateString()}`;
+    });
+    
+    // Add LinkedIn endorsement badges if they exist
+    const endorsementContainer = document.getElementById('linkedin-endorsements');
+    if (endorsementContainer) {
+        const skills = ['AWS', 'Cloud Security', 'DevOps', 'Terraform', 'Jenkins', 'Python'];
+        let endorsementHTML = '';
+        
+        skills.forEach(skill => {
+            endorsementHTML += `<span class="endorsement-badge">${skill}</span> `;
+        });
+        
+        endorsementContainer.innerHTML = endorsementHTML;
+    }
+}
+
+// Initialize LinkedIn integration when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    initLinkedInIntegration();
+});

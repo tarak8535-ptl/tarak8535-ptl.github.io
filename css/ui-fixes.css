@@ -1,0 +1,102 @@
+/* UI Fixes CSS */
+
+/* Fix project cards overflow */
+.project-card {
+  overflow: hidden;
+  word-wrap: break-word;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-skills {
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 15px;
+  gap: 5px;
+}
+
+.skill-tag {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Fix button wrapping on small screens */
+@media (max-width: 768px) {
+  .btn-modern {
+    margin: 5px 2px !important;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-xl {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Fix section transitions */
+.wave-divider {
+  display: block;
+  position: relative;
+  margin-bottom: -2px;
+}
+
+/* Fix card heights */
+.card {
+  height: 100%;
+}
+
+/* Fix skill badges wrapping */
+.skill-badge, .intro-tag {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Fix LinkedIn profile section on mobile */
+@media (max-width: 768px) {
+  .linkedin-profile-section .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .linkedin-profile-section .d-flex i {
+    margin-bottom: 10px;
+  }
+}
+
+/* Fix service items on mobile */
+@media (max-width: 576px) {
+  .service-item {
+    margin-bottom: 15px;
+  }
+}
+
+/* Fix intro badge on mobile */
+@media (max-width: 576px) {
+  .intro-badge {
+    padding: 10px;
+  }
+  
+  .intro-tags {
+    margin-top: 10px;
+  }
+}
+
+/* Fix stats counters on mobile */
+@media (max-width: 576px) {
+  .stats-counter {
+    font-size: 1.8rem;
+  }
+}
+
+/* Fix footer icons */
+footer .bi {
+  font-size: 1.2rem;
+}

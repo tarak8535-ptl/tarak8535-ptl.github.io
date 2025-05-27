@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Rushi Patel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Modern Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Dark Theme CSS -->
+    <link href="css/dark-theme.css" rel="stylesheet" />
+    <!-- Unified Theme CSS -->
+    <link href="css/unified-theme.css" rel="stylesheet">
+    <!-- Masthead Small CSS -->
+    <link href="css/masthead-small.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+        }
+        .service-card {
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+        .service-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #2a2a72, #0a66c2);
+            color: white;
+            position: relative;
+        }
+        .service-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(58, 134, 255, 0.2) 0%, rgba(58, 134, 255, 0) 70%);
+            z-index: 1;
+        }
+        .service-header h3 {
+            position: relative;
+            z-index: 2;
+        }
+        .service-body {
+            padding: 20px;
+        }
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+        .feature-list i {
+            color: #3a86ff;
+            margin-right: 10px;
+        }
+        .cta-section {
+            background: linear-gradient(-45deg, #121212, #1e1e1e, #2a2a72, #0a66c2);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            padding: 60px 0;
+            color: white;
+            position: relative;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .cta-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Rushi Patel</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#Experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#Skills&tools">Skills & Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#getintouch">Get in Touch!</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="linkedin-integration.html">LinkedIn Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead-small text-center">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000">
+                    <h1 class="text-white"><i class="fas fa-cogs me-3 animated-icon"></i>Services</h1>
+                    <hr class="divider" />
+                    <p class="text-white-75">Professional DevOps & Cloud Security Solutions</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4" data-aos="fade-up">My Services</h2>
+                    <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">I offer a range of DevOps and Cloud Security services to help businesses secure and optimize their cloud infrastructure.</p>
+                </div>
+            </div>
+            
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>Cloud Infrastructure Setup</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Secure and scalable cloud infrastructure setup on AWS or GCP with best practices.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> AWS/GCP account setup and configuration</li>
+                                <li><i class="fas fa-check-circle"></i> VPC and network architecture design</li>
+                                <li><i class="fas fa-check-circle"></i> Security groups and IAM policies</li>
+                                <li><i class="fas fa-check-circle"></i> Infrastructure as Code implementation</li>
+                                <li><i class="fas fa-check-circle"></i> Cost optimization recommendations</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>CI/CD Pipeline Setup</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Automated CI/CD pipeline implementation for efficient software delivery.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> Jenkins or GitHub Actions setup</li>
+                                <li><i class="fas fa-check-circle"></i> Pipeline configuration and optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Docker containerization</li>
+                                <li><i class="fas fa-check-circle"></i> Automated testing integration</li>
+                                <li><i class="fas fa-check-circle"></i> Deployment automation</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>Cloud Security Assessment</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Comprehensive security assessment of your cloud infrastructure and applications.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> Vulnerability assessment</li>
+                                <li><i class="fas fa-check-circle"></i> Security configuration review</li>
+                                <li><i class="fas fa-check-circle"></i> IAM and access control audit</li>
+                                <li><i class="fas fa-check-circle"></i> Compliance gap analysis</li>
+                                <li><i class="fas fa-check-circle"></i> Security recommendations report</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>Infrastructure as Code</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Terraform or CloudFormation implementation for automated infrastructure provisioning.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> Terraform/CloudFormation setup</li>
+                                <li><i class="fas fa-check-circle"></i> Infrastructure code development</li>
+                                <li><i class="fas fa-check-circle"></i> State management configuration</li>
+                                <li><i class="fas fa-check-circle"></i> CI/CD integration for IaC</li>
+                                <li><i class="fas fa-check-circle"></i> Documentation and knowledge transfer</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>Kubernetes Deployment</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Kubernetes cluster setup and application deployment with security best practices.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> Kubernetes cluster setup</li>
+                                <li><i class="fas fa-check-circle"></i> Container orchestration</li>
+                                <li><i class="fas fa-check-circle"></i> Security policies implementation</li>
+                                <li><i class="fas fa-check-circle"></i> Monitoring and logging setup</li>
+                                <li><i class="fas fa-check-circle"></i> CI/CD integration for Kubernetes</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card shadow">
+                        <div class="service-header">
+                            <h3>DevOps Consulting</h3>
+                        </div>
+                        <div class="service-body">
+                            <p>Expert advice on DevOps practices, tools, and implementation strategies.</p>
+                            <ul class="feature-list mt-4">
+                                <li><i class="fas fa-check-circle"></i> DevOps assessment and roadmap</li>
+                                <li><i class="fas fa-check-circle"></i> Tool selection and integration</li>
+                                <li><i class="fas fa-check-circle"></i> Process optimization</li>
+                                <li><i class="fas fa-check-circle"></i> Team training and enablement</li>
+                                <li><i class="fas fa-check-circle"></i> Continuous improvement strategies</li>
+                            </ul>
+                            <a href="#getintouch" class="btn btn-modern btn-primary w-100 mt-4">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="getintouch">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="mb-4">Ready to Get Started?</h2>
+                    <p class="lead mb-5">Let's collaborate to automate, secure, and optimize your cloud infrastructure! Contact me today to discuss your project needs.</p>
+                    <a href="mailto:contact@rushipatel.com" class="btn btn-modern btn-light btn-xl">
+                        <i class="fas fa-envelope me-2 animated-icon"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">
+                <div>Copyright &copy; <span id="current-year">2023</span> - Rushi Patel</div>
+                <div class="profile-last-updated mt-1 mb-2"></div>
+                <div class="mt-2">
+                    <a href="https://www.linkedin.com/in/rushi-patel-888440166/" class="mx-2 linkedin-profile-link" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/tarak8535-ptl" class="mx-2" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="mailto:contact@rushipatel.com" class="mx-2"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Theme Switcher -->
+    <script src="js/theme-switcher.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>

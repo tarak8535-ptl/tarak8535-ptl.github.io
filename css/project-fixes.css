@@ -1,0 +1,89 @@
+/* Project UI Fixes */
+
+/* Fix project card layout */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Improve project header */
+.project-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.project-date, .project-company {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Fix project description */
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Improve key features section */
+.key-features {
+  margin: 12px 0;
+  padding: 12px 15px;
+}
+
+.key-features ul {
+  margin-bottom: 0;
+}
+
+.key-features li {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+/* Fix skill tags wrapping */
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.skill-tag {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .project-card {
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .project-skills {
+    padding-top: 10px;
+  }
+}
+
+/* Fix project link */
+.project-link {
+  margin: 15px 0;
+  display: inline-block;
+}

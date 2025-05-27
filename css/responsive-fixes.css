@@ -1,0 +1,77 @@
+/* Responsive Fixes CSS */
+
+/* Mobile fixes */
+@media (max-width: 576px) {
+  /* Project cards */
+  .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .project-date, .project-company {
+    font-size: 0.8rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+  }
+  
+  .key-features h6 {
+    font-size: 0.9rem;
+  }
+  
+  .key-features li {
+    font-size: 0.8rem;
+  }
+  
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+  }
+  
+  /* Button fixes */
+  .btn-modern.btn-xl {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin: 3px !important;
+  }
+  
+  /* Stats counters */
+  .stats-counter {
+    font-size: 1.8rem;
+  }
+  
+  /* Service items */
+  .service-item {
+    padding: 5px;
+  }
+  
+  .service-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+}
+
+/* Tablet fixes */
+@media (min-width: 577px) and (max-width: 991px) {
+  .project-card {
+    margin-bottom: 20px;
+  }
+  
+  .btn-modern.btn-xl {
+    padding: 10px 20px;
+    margin: 5px !important;
+  }
+}
+
+/* Fix for all screen sizes */
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.project-link {
+  word-break: break-word;
+}

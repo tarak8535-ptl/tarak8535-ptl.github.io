@@ -1,0 +1,46 @@
+/* Custom Icons for Terraform and other technologies */
+
+.fab.fa-terraform:before {
+  content: "\f1c0"; /* Using a placeholder icon */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%233EBDFF" d="M12.042 6.858v8.589l7.456 4.292v-8.589zm-10.309 18.54l7.456-4.292v-8.589l-7.456 4.292zm17.765-13.644l-7.456-4.292V0l7.456 4.292z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  color: transparent;
+}
+
+/* Enhanced skill badges */
+.skill-badge {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(58, 134, 255, 0.3);
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(58, 134, 255, 0.2);
+}
+
+/* Expertise icons with glow effect */
+.expertise-icon {
+  position: relative;
+}
+
+.expertise-icon:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgba(58, 134, 255, 0.0);
+  transition: all 0.3s ease;
+}
+
+.expertise-icon:hover:after {
+  box-shadow: 0 0 8px 2px rgba(58, 134, 255, 0.6);
+}
