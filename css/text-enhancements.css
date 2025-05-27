@@ -1,0 +1,44 @@
+/* Text Enhancements CSS */
+
+/* Enhanced typography */
+.lead.fw-bold {
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Text highlights */
+.text-highlight {
+  background: linear-gradient(120deg, rgba(58, 134, 255, 0.2), rgba(58, 134, 255, 0));
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+/* Improved line height for better readability */
+.modern-card p {
+  line-height: 1.4;
+}
+
+/* Enhanced list items */
+.modern-card .fas.fa-check-circle {
+  font-size: 0.8rem;
+}
+
+/* Compact spacing */
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+  .modern-card {
+    font-size: 0.9rem;
+  }
+  
+  .stats-counter {
+    font-size: 1.8rem;
+  }
+}

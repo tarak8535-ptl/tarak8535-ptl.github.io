@@ -1,0 +1,143 @@
+/* Dark Theme CSS */
+
+:root {
+  --dark-bg: #121212;
+  --dark-bg-secondary: #1e1e1e;
+  --dark-bg-light: #2d2d2d;
+  --dark-text: #e0e0e0;
+  --dark-text-muted: #aaaaaa;
+  --dark-primary: #3a86ff;
+  --dark-primary-hover: #2a76ef;
+  --dark-border: #444444;
+  --dark-card-bg: #252525;
+  --dark-linkedin: #0077b5;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+#mainNav {
+  background-color: rgba(18, 18, 18, 0.9) !important;
+}
+
+#mainNav .navbar-brand,
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: var(--dark-text);
+}
+
+.text-white-75 {
+  color: var(--dark-text-muted) !important;
+}
+
+.bg-primary {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+.bg-light {
+  background-color: var(--dark-bg-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark-bg) !important;
+}
+
+.text-muted {
+  color: var(--dark-text-muted) !important;
+}
+
+.btn-primary {
+  background-color: var(--dark-primary);
+  border-color: var(--dark-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-primary-hover);
+  border-color: var(--dark-primary-hover);
+}
+
+.btn-light {
+  background-color: var(--dark-bg-light);
+  border-color: var(--dark-border);
+  color: var(--dark-text);
+}
+
+.btn-light:hover {
+  background-color: var(--dark-bg-secondary);
+  color: var(--dark-text);
+}
+
+.card {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+}
+
+.card-body {
+  color: var(--dark-text);
+}
+
+.card-title, .card-subtitle {
+  color: var(--dark-text);
+}
+
+hr.divider {
+  background-color: var(--dark-primary);
+}
+
+footer.bg-light {
+  background-color: var(--dark-bg) !important;
+}
+
+.masthead {
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.9) 100%), url("../assets/img/bg-masthead.jpg");
+}
+
+.linkedin-badge {
+  background-color: var(--dark-card-bg);
+  border-color: var(--dark-border);
+}
+
+.linkedin-profile-section {
+  background-color: var(--dark-card-bg);
+  border-left: 4px solid var(--dark-linkedin);
+}
+
+.endorsement-badge {
+  background-color: rgba(58, 134, 255, 0.2);
+  color: var(--dark-primary);
+}
+
+.linkedin-connect-btn {
+  background-color: var(--dark-linkedin);
+}
+
+.linkedin-connect-btn:hover {
+  background-color: #005e8d;
+}
+
+/* Fix for text contrast */
+a {
+  color: var(--dark-primary);
+}
+
+a:hover {
+  color: var(--dark-primary-hover);
+}
+
+/* Dark scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-bg-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-border);
+}
