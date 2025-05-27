@@ -75,6 +75,11 @@ class ThemeSwitcher {
     toggleTheme() {
         this.darkThemeEnabled = !this.darkThemeEnabled;
         this.applyTheme();
+        
+        // Auto refresh the page after theme change
+        setTimeout(() => {
+            window.location.reload();
+        }, 300); // Short delay to allow theme change to be visible first
     }
 
     createThemeToggleButton() {
