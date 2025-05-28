@@ -1,4 +1,4 @@
-/* Dark Theme CSS */
+/* Dark Theme CSS - Always Enabled with Purple Accents */
 
 :root {
   --dark-bg: #121212;
@@ -6,16 +6,20 @@
   --dark-bg-light: #2d2d2d;
   --dark-text: #e0e0e0;
   --dark-text-muted: #aaaaaa;
-  --dark-primary: #3a86ff;
-  --dark-primary-hover: #2a76ef;
+  --dark-primary: #9370DB; /* Medium Purple */
+  --dark-primary-hover: #7B68EE; /* Medium Slate Blue */
   --dark-border: #444444;
   --dark-card-bg: #252525;
   --dark-linkedin: #0077b5;
+  --dark-purple-accent: #6A5ACD; /* Slate Blue */
+  --dark-purple-light: #9370DB; /* Medium Purple */
+  --dark-purple-dark: #483D8B; /* Dark Slate Blue */
 }
 
+/* Force dark mode on all elements */
 body {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
+  background-color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
 }
 
 #mainNav {
@@ -23,12 +27,16 @@ body {
 }
 
 #mainNav .navbar-brand,
-#mainNav .navbar-nav .nav-item .nav-link {
-  color: var(--dark-text);
+#mainNav .navbar-nav .nav-item .nav-link,
+#mainNav.navbar-shrink .navbar-brand,
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+  color: var(--dark-text) !important;
 }
 
-.text-white-75 {
-  color: var(--dark-text-muted) !important;
+#mainNav .navbar-nav .nav-item .nav-link:hover, 
+#mainNav .navbar-nav .nav-item .nav-link:active,
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: var(--dark-purple-light) !important;
 }
 
 .bg-primary {
@@ -47,82 +55,97 @@ body {
   color: var(--dark-text-muted) !important;
 }
 
-.btn-primary {
-  background-color: var(--dark-primary);
-  border-color: var(--dark-primary);
-}
-
-.btn-primary:hover {
-  background-color: var(--dark-primary-hover);
-  border-color: var(--dark-primary-hover);
-}
-
-.btn-light {
-  background-color: var(--dark-bg-light);
-  border-color: var(--dark-border);
-  color: var(--dark-text);
-}
-
-.btn-light:hover {
-  background-color: var(--dark-bg-secondary);
-  color: var(--dark-text);
-}
-
-.card {
-  background-color: var(--dark-card-bg);
-  border-color: var(--dark-border);
-}
-
-.card-body {
-  color: var(--dark-text);
-}
-
-.card-title, .card-subtitle {
-  color: var(--dark-text);
+.text-primary {
+  color: var(--dark-purple-light) !important;
 }
 
 hr.divider {
-  background-color: var(--dark-primary);
+  background-color: var(--dark-purple-accent) !important;
 }
 
-footer.bg-light {
+.btn-primary {
+  background-color: var(--dark-purple-accent) !important;
+  border-color: var(--dark-purple-accent) !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-purple-dark) !important;
+  border-color: var(--dark-purple-dark) !important;
+}
+
+.btn-light {
+  background-color: var(--dark-bg-light) !important;
+  border-color: var(--dark-border) !important;
+  color: var(--dark-text) !important;
+}
+
+.btn-light:hover {
+  background-color: var(--dark-bg-secondary) !important;
+  color: var(--dark-text) !important;
+}
+
+.btn-outline-primary {
+  color: var(--dark-purple-light) !important;
+  border-color: var(--dark-purple-light) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--dark-purple-accent) !important;
+  color: white !important;
+}
+
+.card, .modern-card, .project-card, .cert-card {
+  background-color: var(--dark-card-bg) !important;
+  border-color: var(--dark-border) !important;
+}
+
+.card-body {
+  color: var(--dark-text) !important;
+  background-color: var(--dark-card-bg) !important;
+}
+
+.card-title, .card-subtitle, h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text) !important;
+}
+
+footer.bg-light, footer {
   background-color: var(--dark-bg) !important;
+  color: var(--dark-text) !important;
 }
 
 .masthead {
-  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.9) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.9) 100%), url("../assets/img/bg-masthead.jpg") !important;
 }
 
 .linkedin-badge {
-  background-color: var(--dark-card-bg);
-  border-color: var(--dark-border);
+  background-color: var(--dark-card-bg) !important;
+  border-color: var(--dark-border) !important;
 }
 
 .linkedin-profile-section {
-  background-color: var(--dark-card-bg);
-  border-left: 4px solid var(--dark-linkedin);
+  background-color: var(--dark-card-bg) !important;
+  border-left: 4px solid var(--dark-linkedin) !important;
 }
 
-.endorsement-badge {
-  background-color: rgba(58, 134, 255, 0.2);
-  color: var(--dark-primary);
+.skill-badge {
+  background-color: rgba(106, 90, 205, 0.3) !important;
+  color: var(--dark-text) !important;
 }
 
-.linkedin-connect-btn {
-  background-color: var(--dark-linkedin);
+/* Fix for badges */
+.badge.bg-light {
+  background-color: var(--dark-bg-light) !important;
+  color: var(--dark-text) !important;
 }
 
-.linkedin-connect-btn:hover {
-  background-color: #005e8d;
-}
-
-/* Fix for text contrast */
+/* Fix for links */
 a {
-  color: var(--dark-primary);
+  color: var(--dark-purple-light) !important;
 }
 
 a:hover {
-  color: var(--dark-primary-hover);
+  color: var(--dark-primary-hover) !important;
 }
 
 /* Dark scrollbar */
@@ -140,4 +163,9 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-border);
+}
+
+/* Hide theme switcher */
+.theme-switcher, .theme-toggle {
+  display: none !important;
 }

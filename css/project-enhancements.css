@@ -2,15 +2,15 @@
 
 /* Consistent key features styling */
 .key-features {
-  background: rgba(58, 134, 255, 0.1);
+  background: rgba(106, 90, 205, 0.1);
   border-radius: 8px;
   padding: 12px 15px;
   margin: 12px 0;
-  border-left: 3px solid #3a86ff;
+  border-left: 3px solid #9370DB;
 }
 
 .key-features h6 {
-  color: #3a86ff;
+  color: #9370DB;
   margin-bottom: 10px;
   font-weight: 600;
   display: flex;
@@ -42,7 +42,7 @@
 
 /* Improved project headers */
 .project-header {
-  background: linear-gradient(135deg, #2a2a72, #0a66c2);
+  background: linear-gradient(135deg, #483D8B, #6A5ACD);
   padding: 15px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -57,8 +57,8 @@
 }
 
 .skill-tag {
-  background: rgba(58, 134, 255, 0.15);
-  color: #3a86ff;
+  background: rgba(106, 90, 205, 0.15);
+  color: #9370DB;
   border-radius: 15px;
   padding: 3px 10px;
   font-size: 0.75rem;
@@ -68,7 +68,7 @@
 }
 
 .skill-tag:hover {
-  background: rgba(58, 134, 255, 0.25);
+  background: rgba(106, 90, 205, 0.25);
   transform: translateY(-2px);
 }
 

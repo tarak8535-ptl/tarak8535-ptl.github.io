@@ -1,46 +1,102 @@
-/* Custom Icons for Terraform and other technologies */
+/* Custom Icons CSS - Using local assets */
 
-.fab.fa-terraform:before {
-  content: "\f1c0"; /* Using a placeholder icon */
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%233EBDFF" d="M12.042 6.858v8.589l7.456 4.292v-8.589zm-10.309 18.54l7.456-4.292v-8.589l-7.456 4.292zm17.765-13.644l-7.456-4.292V0l7.456 4.292z"/></svg>');
+/* Replace Font Awesome icons with local assets */
+.skill-icon-aws {
+  background-image: url('../assets/icons/aws.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   vertical-align: middle;
-  color: transparent;
 }
 
-/* Enhanced skill badges */
-.skill-badge {
-  transition: all 0.3s ease;
-  border: 1px solid rgba(58, 134, 255, 0.3);
+.skill-icon-docker {
+  background-image: url('../assets/icons/docker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
-.skill-badge:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(58, 134, 255, 0.2);
+.skill-icon-terraform {
+  background-image: url('../assets/icons/terraform/icons8-terraform-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
-/* Expertise icons with glow effect */
-.expertise-icon {
-  position: relative;
+.skill-icon-jenkins {
+  background-image: url('../assets/icons/icons8-jenkins-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
-.expertise-icon:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  box-shadow: 0 0 8px 2px rgba(58, 134, 255, 0.0);
-  transition: all 0.3s ease;
+.skill-icon-python {
+  background-image: url('../assets/icons/icons8-python-64.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 
-.expertise-icon:hover:after {
-  box-shadow: 0 0 8px 2px rgba(58, 134, 255, 0.6);
+.skill-icon-git {
+  background-image: url('../assets/icons/icons8-git-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-contact {
+  background-image: url('../assets/icons/icons8-contact-us-64.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-services {
+  background-image: url('../assets/icons/icons8-services-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* CompTIA certification icon */
+.skill-icon-comptia {
+  background-image: url('../assets/img/certifications/comptia-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
