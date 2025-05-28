@@ -1,0 +1,30 @@
+/* Shadow Fix CSS */
+
+/* Remove all shadows from home section */
+.modern-card, 
+.responsive-card,
+#home .container,
+#home .row,
+#home .col-lg-12,
+.intro-badge,
+.company-badge,
+.services-section {
+  box-shadow: none !important;
+  border: none !important;
+  filter: none !important;
+}
+
+/* Remove any overlay effects */
+.hero-overlay {
+  display: none !important;
+}
+
+/* Fix z-index issues */
+#home {
+  z-index: auto !important;
+}
+
+/* Ensure consistent shadows for other cards */
+.card, .cert-card, .project-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}

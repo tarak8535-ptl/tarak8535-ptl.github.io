@@ -1,0 +1,23 @@
+/* Home Section Styling */
+
+/* Style the home section like other page sections */
+#home.page-section {
+  padding: 8rem 0;
+}
+
+@media (max-width: 992px) {
+  #home.page-section {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #home.page-section {
+    padding: 4rem 0;
+  }
+}
+
+/* Ensure overlays don't block clicks */
+.hero-overlay, .floating-icons {
+  pointer-events: none !important;
+}

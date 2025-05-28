@@ -1,0 +1,67 @@
+/* Color Fixes - Change Blue to Purple */
+
+/* Change any remaining blue elements to purple */
+.text-primary, 
+.bi-primary,
+.text-info,
+.text-blue {
+  color: #9370DB !important; /* Medium Purple */
+}
+
+.bg-primary,
+.bg-info,
+.bg-blue {
+  background-color: #6A5ACD !important; /* Slate Blue */
+}
+
+/* Fix specific blue elements */
+.btn-primary {
+  background-color: #6A5ACD !important; /* Slate Blue */
+  border-color: #6A5ACD !important;
+}
+
+.btn-primary:hover {
+  background-color: #483D8B !important; /* Dark Slate Blue */
+  border-color: #483D8B !important;
+}
+
+.btn-outline-primary {
+  color: #9370DB !important; /* Medium Purple */
+  border-color: #9370DB !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6A5ACD !important; /* Slate Blue */
+  color: white !important;
+}
+
+/* Change Bootstrap icons */
+.bi-cloud,
+.bi-shield-lock,
+.bi-code-slash,
+.bi-gear,
+.bi-diagram-3,
+.bi-shield-check {
+  color: #9370DB !important; /* Medium Purple */
+}
+
+/* Change any remaining blue accents */
+a, .nav-link:hover, .navbar-brand:hover {
+  color: #9370DB !important; /* Medium Purple */
+}
+
+a:hover {
+  color: #7B68EE !important; /* Medium Slate Blue */
+}
+
+hr.divider {
+  background-color: #6A5ACD !important; /* Slate Blue */
+}
+
+.linkedin-connect-btn {
+  background-color: #6A5ACD !important; /* Slate Blue */
+}
+
+.linkedin-connect-btn:hover {
+  background-color: #483D8B !important; /* Dark Slate Blue */
+}

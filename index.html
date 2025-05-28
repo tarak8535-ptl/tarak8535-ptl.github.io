@@ -27,6 +27,18 @@
         <link href="css/unified-theme.css" rel="stylesheet" />
         <!-- Color Contrast Fix CSS -->
         <link href="css/color-contrast-fix.css" rel="stylesheet" />
+        <!-- Accessibility Fixes CSS -->
+        <link href="css/accessibility-fixes.css" rel="stylesheet" />
+        <!-- Shadow Fix CSS -->
+        <link href="css/shadow-fix.css" rel="stylesheet" />
+        <!-- Remove Shadows CSS -->
+        <link href="css/remove-shadows.css" rel="stylesheet" />
+        <!-- Card Style CSS -->
+        <link href="css/card-style.css" rel="stylesheet" />
+        <!-- Navbar Fix CSS -->
+        <link href="css/navbar-fix.css" rel="stylesheet" />
+        <!-- Color Fixes CSS -->
+        <link href="css/color-fixes.css" rel="stylesheet" />
         <!-- Home Rework CSS -->
         <link href="css/home-rework.css" rel="stylesheet" />
         <!-- Custom Icons CSS -->
@@ -81,6 +93,8 @@
         <link href="css/project-layout-fix.css" rel="stylesheet" />
         <!-- Certifications CSS -->
         <link href="css/certifications.css" rel="stylesheet" />
+        <!-- Modern Card Scrolling CSS -->
+        <link href="css/modern-card-scroll.css" rel="stylesheet" />
         <!-- for icons -->
         <link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css"
         media="screen" />
@@ -90,16 +104,17 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body id="page-top">
+        <a href="#home" class="skip-link">Skip to main content</a>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">Rushi Patel</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon" aria-hidden="true"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Skills&tools">Skills & Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Skills-and-tools">Skills & Tools</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#getintouch">Get in Touch!</a></li>
@@ -109,38 +124,39 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead" id="home">
+        <!-- Home Section -->
+        <main>
+        <section class="page-section bg-dark text-white" id="home" role="region" aria-label="Home">
             <!-- Floating Tech Icons Background -->
-            <div class="floating-icons">
-                <i class="fab fa-aws tech-icon" style="top:15%; left:10%"></i>
-                <i class="fab fa-docker tech-icon" style="top:25%; left:25%"></i>
-                <i class="fab fa-python tech-icon" style="top:60%; left:15%"></i>
-                <i class="fab fa-jenkins tech-icon" style="top:75%; left:30%"></i>
-                <i class="fab fa-github tech-icon" style="top:20%; left:80%"></i>
-                <i class="fab fa-java tech-icon" style="top:40%; left:70%"></i>
-                <i class="fab fa-linux tech-icon" style="top:65%; left:85%"></i>
-                <i class="fab fa-js tech-icon" style="top:80%; left:60%"></i>
+            <div class="floating-icons" style="pointer-events: none;" aria-hidden="true">
+                <i class="fab fa-aws tech-icon" style="top:15%; left:10%" aria-hidden="true"></i>
+                <i class="fab fa-docker tech-icon" style="top:25%; left:25%" aria-hidden="true"></i>
+                <i class="fab fa-python tech-icon" style="top:60%; left:15%" aria-hidden="true"></i>
+                <i class="fab fa-jenkins tech-icon" style="top:75%; left:30%" aria-hidden="true"></i>
+                <i class="fab fa-github tech-icon" style="top:20%; left:80%" aria-hidden="true"></i>
+                <i class="fab fa-java tech-icon" style="top:40%; left:70%" aria-hidden="true"></i>
+                <i class="fab fa-linux tech-icon" style="top:65%; left:85%" aria-hidden="true"></i>
+                <i class="fab fa-js tech-icon" style="top:80%; left:60%" aria-hidden="true"></i>
             </div>
             
-            <div class="hero-overlay"></div>
-            <div class="container h-100 d-flex align-items-center justify-content-center flex-column" style="width: 100%; min-width: 90%;">
-                <div class="modern-card p-3 mb-4 responsive-card mx-auto" style="width: 100%; min-width: 90%;">
+            <!-- Removed hero overlay to fix shadow issues -->
+            <div class="container d-flex align-items-center justify-content-center flex-column" style="width: 100%; min-width: 90%; position: relative; z-index: 1;">
+                <div class="card shadow p-4 mb-4 mx-auto" style="width: 100%; max-width: 1200px; background-color: rgba(33, 37, 41, 0.85); border-radius: 10px;">
                     <div class="col-lg-12 mx-auto align-self-baseline text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <div class="intro-badge mb-3 text-center">
-                                <p class="text-white lead fw-bold mb-0 text-smaller"><i class="fas fa-rocket text-primary me-2"></i>DevOps & Cloud Security Engineer</p>
+                                <p class="text-white lead fw-bold mb-0 text-smaller"><i class="fas fa-rocket text-primary me-2" aria-hidden="true"></i>DevOps & Cloud Security Engineer</p>
                                 <div class="intro-tags">
-                                    <span class="intro-tag"><i class="fab fa-aws"></i> AWS</span>
-                                    <span class="intro-tag"><i class="fab fa-terraform"></i> Terraform</span>
-                                    <span class="intro-tag"><i class="fas fa-shield-alt"></i> Security+</span>
-                                    <span class="intro-tag"><i class="fas fa-cloud"></i> Cloud</span>
+                                    <span class="intro-tag"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                                    <span class="intro-tag"><i class="fab fa-terraform" aria-hidden="true"></i> Terraform</span>
+                                    <span class="intro-tag"><i class="fas fa-shield-alt" aria-hidden="true"></i> Security+</span>
+                                    <span class="intro-tag"><i class="fas fa-cloud" aria-hidden="true"></i> Cloud</span>
                                 </div>
                             </div>
                         
                             <p class="text-white intro-text">CompTIA Security+ certified engineer with <span class="text-highlight">3+ years of experience</span> in cloud security, DevOps automation, and infrastructure as code. Specializing in AWS security architecture, compliance frameworks, and automated threat detection systems.</p>
                             
                             <div class="company-badge mt-3">
-                                <i class="fas fa-building text-primary me-2"></i>
+                                <i class="fas fa-building text-primary me-2" aria-hidden="true"></i>
                                 <div>
                                     <p class="text-white mb-0 fw-bold">SuccessKPI Inc. <span class="badge bg-light">Security Engineer</span></p>
                                     <p class="text-white small mb-0">Leading AWS security implementations, including the design and deployment of secure multi-account architectures, AWS Network Firewall configurations, centralized GuardDuty, and Security Hub integrations. Expert in IAM policy design and least privilege enforcement across diverse workloads. Spearheaded CrowdStrike CSPM integration across cloud environments to enhance real-time visibility and posture management. Automated compliance monitoring and remediation workflows using AWS Config, Lambda, and Security Hub custom actions, resulting in a 30% reduction in security incidents. Also implemented alerting for suspicious activity via Slack integrations and enforced PR blocks on critical vulnerabilities using Snyk and SonarCloud.</p>
@@ -148,11 +164,11 @@
                             </div>
                             
                             <div class="services-section mt-4">
-                                <h5 class="text-white mb-3 fw-bold text-smaller"><i class="fas fa-lightbulb text-primary me-2"></i>Core Expertise:</h5>
+                                <h5 class="text-white mb-3 fw-bold text-smaller"><i class="fas fa-lightbulb text-primary me-2" aria-hidden="true"></i>Core Expertise:</h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="service-item">
-                                            <div class="service-icon">
+                                            <div class="service-icon" aria-hidden="true">
                                                 <i class="fas fa-shield-alt"></i>
                                             </div>
                                             <div class="service-text">
@@ -160,7 +176,7 @@
                                             </div>
                                         </div>
                                         <div class="service-item">
-                                            <div class="service-icon">
+                                            <div class="service-icon" aria-hidden="true">
                                                 <i class="fas fa-code-branch"></i>
                                             </div>
                                             <div class="service-text">
@@ -170,7 +186,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="service-item">
-                                            <div class="service-icon">
+                                            <div class="service-icon" aria-hidden="true">
                                                 <i class="fas fa-sync-alt"></i>
                                             </div>
                                             <div class="service-text">
@@ -178,7 +194,7 @@
                                             </div>
                                         </div>
                                         <div class="service-item">
-                                            <div class="service-icon">
+                                            <div class="service-icon" aria-hidden="true">
                                                 <i class="fas fa-robot"></i>
                                             </div>
                                             <div class="service-text">
@@ -205,47 +221,54 @@
                             </div>
                             
                             <div class="mt-3">
-                                <span class="skill-badge"><i class="fab fa-aws me-1"></i> AWS Security</span>
-                                <span class="skill-badge"><i class="fas fa-shield-alt me-1"></i> CompTIA Security+</span>
-                                <span class="skill-badge"><i class="fab fa-jenkins me-1"></i> Jenkins</span>
-                                <span class="skill-badge"><i class="fab fa-terraform me-1"></i> Terraform</span>
-                                <span class="skill-badge"><i class="fas fa-cloud me-1"></i> CrowdStrike CSPM</span>
-                                <span class="skill-badge"><i class="fab fa-docker me-1"></i> Docker</span>
-                                <span class="skill-badge"><i class="fab fa-python me-1"></i> Python</span>
-                                <span class="skill-badge"><i class="fas fa-code-branch me-1"></i> GitOps</span>
+                                <span class="skill-badge"><span class="skill-icon-aws me-1" aria-hidden="true"></span> AWS Security</span>
+                                <span class="skill-badge"><img src="assets/img/certifications/comptia-logo.png" alt="CompTIA" style="width: 16px; height: 16px; margin-right: 4px;"> CompTIA Security+</span>
+                                <span class="skill-badge"><span class="skill-icon-jenkins me-1" aria-hidden="true"></span> Jenkins</span>
+                                <span class="skill-badge"><span class="skill-icon-terraform me-1" aria-hidden="true"></span> Terraform</span>
+                                <span class="skill-badge"><i class="fas fa-cloud me-1" aria-hidden="true"></i> CrowdStrike CSPM</span>
+                                <span class="skill-badge"><span class="skill-icon-docker me-1" aria-hidden="true"></span> Docker</span>
+                                <span class="skill-badge"><span class="skill-icon-python me-1" aria-hidden="true"></span> Python</span>
+                                <span class="skill-badge"><span class="skill-icon-git me-1" aria-hidden="true"></span> GitOps</span>
                             </div>
                     </div>
                 </div>
-                
-                <div class="mb-4 btn-container d-flex flex-wrap justify-content-center">
+            </div>
+                </div>
+            </div>
+            
+            <!-- Button Container -->
+            <div class="container mt-4 mb-4">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center">
                     <a href="https://www.linkedin.com/in/rushi-patel-888440166/" class="btn btn-modern btn-light btn-xl mx-2 mb-2" target="_blank">
-                        <i class="fab fa-linkedin me-2 animated-icon"></i>LinkedIn
+                        <i class="fab fa-linkedin me-2 animated-icon" aria-hidden="true"></i>LinkedIn
                     </a>
                     <a href="https://github.com/tarak8535-ptl" class="btn btn-modern btn-light btn-xl mx-2 mb-2" target="_blank">
-                        <i class="fab fa-github me-2 animated-icon"></i>GitHub
+                        <i class="fab fa-github me-2 animated-icon" aria-hidden="true"></i>GitHub
                     </a>
                     <a class="btn btn-modern btn-light btn-xl mx-2 mb-2" href="#getintouch">
-                        <i class="fas fa-envelope me-2 animated-icon"></i>Contact Me
+                        <i class="fas fa-envelope me-2 animated-icon" aria-hidden="true"></i>Contact Me
                     </a>
                     <a class="btn btn-modern btn-light btn-xl mx-2 mb-2" href="Rushi Mahendrakumar Patel.pdf" target="_blank">
-                        <i class="fas fa-file-pdf me-2 animated-icon"></i>Resume
+                        <i class="fas fa-file-pdf me-2 animated-icon" aria-hidden="true"></i>Resume
                     </a>
                     <a class="btn btn-modern btn-primary btn-xl mx-2 mb-2" href="services.html">
-                        <i class="fas fa-cogs me-2 animated-icon"></i>View Services
+                        <i class="fas fa-cogs me-2 animated-icon" aria-hidden="true"></i>View Services
                     </a>
                 </div>
             </div>
-        </header>
+        </section>
+        </main>
 
         <!-- Section Divider -->
-        <div class="wave-divider">
+        <!-- <div class="wave-divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="shape-fill"></path>
             </svg>
-        </div>
+        </div> -->
 
         <!-- Experience -->
-        <section class="page-section section-transition" id="Experience">
+        <section class="page-section section-transition" id="Experience" role="region" aria-label="Professional Experience">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Professional Experience</h2>
                 <hr class="divider" />
@@ -361,49 +384,49 @@
                 </div>
             </div>
         </section>        <!-- Skills & Tools -->
-        <section class="page-section bg-light" id="Skills&tools">
+        <section class="page-section bg-light" id="Skills-and-tools" role="region" aria-label="Skills and Tools">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Skills & Tools</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-cloud fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-cloud fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">AWS & Cloud</h3>
                             <p class="text-muted mb-0">AWS Security, IAM, EC2, S3, Lambda, CloudFormation, CloudWatch, Google Cloud Run</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-shield-lock fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-shield-lock fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Security</h3>
                             <p class="text-muted mb-0">Cloud Security, Cybersecurity, Network Security, Cryptography, CrowdStrike CSPM, Firewalls</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-code-slash fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-code-slash fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Programming</h3>
                             <p class="text-muted mb-0">Python, Java, JavaScript, C/C++, Android Studio</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-gear fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-gear fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">DevOps & CI/CD</h3>
                             <p class="text-muted mb-0">Jenkins, Terraform, GitOps, GitHub, Bitbucket, IIS, Containerization</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-diagram-3 fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-diagram-3 fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Infrastructure</h3>
                             <p class="text-muted mb-0">Infrastructure as Code (IaC), AWS CLI, Cloud Applications, IT Operations</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 text-center mb-4">
                         <div class="mt-5">
-                            <div class="mb-2"><i class="bi-shield-check fs-1 text-primary"></i></div>
+                            <div class="mb-2" aria-hidden="true"><i class="bi-shield-check fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Security Operations</h3>
                             <p class="text-muted mb-0">Incident Management, Security Implementation, OWASP ZAP, Managed Security Services</p>
                         </div>
@@ -414,7 +437,7 @@
         
         <section class="page-section" id="projects">
         <!-- Projects -->
-        <section class="page-section bg-dark text-white" id="projects">
+        <section class="page-section bg-dark text-white" id="projects" role="region" aria-label="Featured Projects">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0 mb-4">Featured Projects</h2>
                 <div class="projects-row">
@@ -422,8 +445,8 @@
                         <div class="project-card">
                             <div class="project-header">
                                 <h4 class="project-title">Terraform-Based AWS Stateful Firewall Deployment</h4>
-                                <div class="project-date"><i class="far fa-calendar-alt"></i> Oct 2024 - Dec 2024</div>
-                                <div class="project-company"><i class="far fa-building"></i> Associated with SuccessKPI</div>
+                                <div class="project-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Oct 2024 - Dec 2024</div>
+                                <div class="project-company"><i class="far fa-building" aria-hidden="true"></i> Associated with SuccessKPI</div>
                             </div>
                             <div class="project-body">
                                 <p class="project-description">Network security is essential for protecting cloud resources from unauthorized access. I built a Terraform-based AWS firewall solution with custom IP/FQDN whitelisting that reduced unauthorized access risks by 30%.</p>
@@ -441,11 +464,11 @@
                                 <p class="project-description">This project ensures policy consistency, reduces misconfigurations, and improves compliance across all environments.</p>
                                 
                                 <div class="project-skills">
-                                    <span class="skill-tag"><i class="fas fa-shield-alt"></i> Firewalls</span>
-                                    <span class="skill-tag"><i class="fab fa-terraform"></i> Terraform</span>
-                                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS</span>
-                                    <span class="skill-tag"><i class="fas fa-tachometer-alt"></i> CloudWatch</span>
-                                    <span class="skill-tag"><i class="fas fa-sync"></i> CI/CD</span>
+                                    <span class="skill-tag"><i class="fas fa-shield-alt" aria-hidden="true"></i> Firewalls</span>
+                                    <span class="skill-tag"><i class="fab fa-terraform" aria-hidden="true"></i> Terraform</span>
+                                    <span class="skill-tag"><i class="fab fa-aws" aria-hidden="true"></i> AWS</span>
+                                    <span class="skill-tag"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> CloudWatch</span>
+                                    <span class="skill-tag"><i class="fas fa-sync" aria-hidden="true"></i> CI/CD</span>
                                 </div>
                             </div>
                         </div>
@@ -568,7 +591,7 @@
                                 
                                 <p class="project-description">This project helps organizations improve cloud security, reduce manual intervention, and ensure compliance effortlessly.</p>
                                 
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> View GitHub Repository</a>
+                                <a href="#" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> View GitHub Repository</a>
                                 
                                 <div class="project-skills">
                                     <span class="skill-tag"><i class="fab fa-terraform"></i> Terraform</span>
@@ -617,7 +640,7 @@
         </section>
         
         <!-- Certifications -->
-        <section class="page-section bg-light" id="certifications">
+        <section class="page-section bg-light" id="certifications" role="region" aria-label="Certifications">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Certifications</h2>
                 <hr class="divider" />
@@ -637,8 +660,8 @@
                                     <strong>Credential ID:</strong> COMP001022405470<br>
                                     <strong>Skills:</strong> Cryptography, Network Security
                                 </p>
-                                <a href="https://www.credly.com/badges/db28bdbb-f38c-4f2b-bc44-4983df85fc87/linked_in_profile" class="btn btn-sm btn-outline-primary" target="_blank">
-                                    <i class="fas fa-award me-1"></i> View Badge
+                                <a href="https://www.credly.com/badges/db28bdbb-f38c-4f2b-bc44-4983df85fc87/linked_in_profile" class="btn btn-sm btn-outline-primary" target="_blank" aria-label="View CompTIA Security+ Badge">
+                                    <img src="assets/img/certifications/comptia-logo.png" alt="CompTIA" style="width: 16px; height: 16px; margin-right: 4px;"> View Badge
                                 </a>
                             </div>
                         </div>
@@ -657,8 +680,8 @@
                                     <strong>Issued:</strong> Apr 2021<br>
                                     <strong>Credential ID:</strong> b51959bd-e835-4ff8-aa3a-9f6f02db6625<br>
                                 </p>
-                                <a href="https://www.credly.com/badges/b51959bd-e835-4ff8-aa3a-9f6f02db6625?source=linked_in_profile" class="btn btn-sm btn-outline-primary" target="_blank">
-                                    <i class="fas fa-award me-1"></i> View Badge
+                                <a href="https://www.credly.com/badges/b51959bd-e835-4ff8-aa3a-9f6f02db6625?source=linked_in_profile" class="btn btn-sm btn-outline-primary" target="_blank" aria-label="View Microsoft Security Fundamentals Badge">
+                                    <i class="fas fa-award me-1" aria-hidden="true"></i> View Badge
                                 </a>
                             </div>
                         </div>
@@ -725,7 +748,7 @@
             </div>
         </section>
         
-        <section class="page-section" id="getintouch">
+        <section class="page-section" id="getintouch" role="region" aria-label="Contact Information">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
@@ -772,17 +795,17 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <div class="d-flex flex-wrap justify-content-center">
-                            <a href="mailto:rushipatel3920@gmail.com" class="btn btn-outline-primary m-2">
-                                <i class="bi-envelope me-2"></i>Email
+                            <a href="mailto:rushipatel3920@gmail.com" class="btn btn-outline-primary m-2" aria-label="Email Rushi Patel">
+                                <i class="bi-envelope me-2" aria-hidden="true"></i>Email
                             </a>
-                            <a href="https://wa.me/917201943800" class="btn btn-outline-primary m-2">
-                                <i class="bi-whatsapp me-2"></i>WhatsApp
+                            <a href="https://wa.me/917201943800" class="btn btn-outline-primary m-2" aria-label="Contact via WhatsApp">
+                                <i class="bi-whatsapp me-2" aria-hidden="true"></i>WhatsApp
                             </a>
-                            <a href="https://www.linkedin.com/in/rushi-patel-888440166/" target="_blank" class="btn btn-outline-primary m-2">
-                                <i class="bi-linkedin me-2"></i>LinkedIn
+                            <a href="https://www.linkedin.com/in/rushi-patel-888440166/" target="_blank" class="btn btn-outline-primary m-2" aria-label="Visit LinkedIn Profile">
+                                <i class="bi-linkedin me-2" aria-hidden="true"></i>LinkedIn
                             </a>
-                            <a href="https://github.com/tarak8535-ptl" target="_blank" class="btn btn-outline-primary m-2">
-                                <i class="bi-github me-2"></i>GitHub
+                            <a href="https://github.com/tarak8535-ptl" target="_blank" class="btn btn-outline-primary m-2" aria-label="Visit GitHub Profile">
+                                <i class="bi-github me-2" aria-hidden="true"></i>GitHub
                             </a>
                         </div>
                     </div>
@@ -792,15 +815,15 @@
         
         
         <!-- Footer-->
-        <footer class="bg-light py-5">
+        <footer class="bg-light py-5" role="contentinfo">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">
                     <div>Copyright &copy; <span id="current-year">2023</span> - Rushi Patel</div>
                     <div class="profile-last-updated mt-1 mb-2"></div>
                     <div class="mt-2">
-                        <a href="https://www.linkedin.com/in/rushi-patel-888440166/" class="mx-2 linkedin-profile-link" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/tarak8535-ptl" class="mx-2" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="mailto:rushipatel3920@gmail.com.com" class="mx-2"><i class="bi bi-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/rushi-patel-888440166/" class="mx-2 linkedin-profile-link" target="_blank" aria-label="LinkedIn Profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/tarak8535-ptl" class="mx-2" target="_blank" aria-label="GitHub Profile"><i class="bi bi-github" aria-hidden="true"></i></a>
+                        <a href="mailto:rushipatel3920@gmail.com" class="mx-2" aria-label="Email"><i class="bi bi-envelope" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -840,5 +863,7 @@
         <script src="js/home-animations.js"></script>
         <!-- Smooth Scroll -->
         <script src="js/smooth-scroll.js"></script>
+        <!-- Navbar Fix -->
+        <script src="js/navbar-fix.js"></script>
     </body>
 </html>
