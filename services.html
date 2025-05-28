@@ -29,11 +29,17 @@
             font-family: 'Inter', sans-serif;
             padding-top: 76px;
         }
+        .row.equal-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
         .service-card {
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .service-card:hover {
             transform: translateY(-5px);
@@ -44,6 +50,9 @@
             background: linear-gradient(135deg, #2a2a72, #0a66c2);
             color: white;
             position: relative;
+            height: 90px;
+            display: flex;
+            align-items: center;
         }
         .service-header::before {
             content: '';
@@ -58,9 +67,14 @@
         .service-header h3 {
             position: relative;
             z-index: 2;
+            width: 100%;
+            margin: 0;
         }
         .service-body {
             padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
         }
         .feature-list {
             list-style: none;
@@ -147,7 +161,7 @@
                 </div>
             </div>
             
-            <div class="row gx-4 gx-lg-5">
+            <div class="row gx-4 gx-lg-5 equal-height">
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card shadow">
                         <div class="service-header">
@@ -155,7 +169,7 @@
                         </div>
                         <div class="service-body">
                             <p>Secure and scalable cloud infrastructure setup on AWS or GCP with best practices.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> AWS/GCP account setup and configuration</li>
                                 <li><i class="fas fa-check-circle"></i> VPC and network architecture design</li>
                                 <li><i class="fas fa-check-circle"></i> Security groups and IAM policies</li>
@@ -174,7 +188,7 @@
                         </div>
                         <div class="service-body">
                             <p>Automated CI/CD pipeline implementation for efficient software delivery.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> Jenkins or GitHub Actions setup</li>
                                 <li><i class="fas fa-check-circle"></i> Pipeline configuration and optimization</li>
                                 <li><i class="fas fa-check-circle"></i> Docker containerization</li>
@@ -193,7 +207,7 @@
                         </div>
                         <div class="service-body">
                             <p>Comprehensive security assessment of your cloud infrastructure and applications.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> Vulnerability assessment</li>
                                 <li><i class="fas fa-check-circle"></i> Security configuration review</li>
                                 <li><i class="fas fa-check-circle"></i> IAM and access control audit</li>
@@ -212,7 +226,7 @@
                         </div>
                         <div class="service-body">
                             <p>Terraform or CloudFormation implementation for automated infrastructure provisioning.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> Terraform/CloudFormation setup</li>
                                 <li><i class="fas fa-check-circle"></i> Infrastructure code development</li>
                                 <li><i class="fas fa-check-circle"></i> State management configuration</li>
@@ -231,7 +245,7 @@
                         </div>
                         <div class="service-body">
                             <p>Kubernetes cluster setup and application deployment with security best practices.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> Kubernetes cluster setup</li>
                                 <li><i class="fas fa-check-circle"></i> Container orchestration</li>
                                 <li><i class="fas fa-check-circle"></i> Security policies implementation</li>
@@ -250,7 +264,7 @@
                         </div>
                         <div class="service-body">
                             <p>Expert advice on DevOps practices, tools, and implementation strategies.</p>
-                            <ul class="feature-list mt-4">
+                            <ul class="feature-list mt-4 flex-grow-1">
                                 <li><i class="fas fa-check-circle"></i> DevOps assessment and roadmap</li>
                                 <li><i class="fas fa-check-circle"></i> Tool selection and integration</li>
                                 <li><i class="fas fa-check-circle"></i> Process optimization</li>
