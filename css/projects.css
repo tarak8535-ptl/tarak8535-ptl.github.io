@@ -19,12 +19,24 @@
   padding: 15px 20px;
   background: linear-gradient(135deg, #2a2a72, #0a66c2);
   position: relative;
+  height: 160px; /* Fixed height for uniformity */
+  min-height: unset;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-title {
   color: white;
   margin-bottom: 5px;
   font-weight: 600;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-date {
@@ -56,6 +68,7 @@
 
 .project-description {
   margin-bottom: 15px;
+  height: 80px; /* Fixed height for uniformity */
   font-size: 0.9rem;
   line-height: 1.5;
 }
