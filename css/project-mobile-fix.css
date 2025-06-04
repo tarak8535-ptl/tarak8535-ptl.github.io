@@ -1,0 +1,38 @@
+/* Project Mobile Alignment Fix
+ * Fixes the alignment issue for project cards on mobile devices
+ */
+
+@media (max-width: 767px) {
+  /* Center project cards on mobile */
+  .projects-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-col {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 576px) {
+  .project-col {
+    padding: 0 10px;
+  }
+  
+  #projects .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

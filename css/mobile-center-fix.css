@@ -1,0 +1,48 @@
+/* Mobile UI Alignment Fix
+ * Fixes the issue where content is shifted to the left on mobile devices
+ * causing uneven margins (more space on the right than left)
+ */
+
+@media (max-width: 767px) {
+  /* Fix container centering on mobile */
+  .container,
+  .container-fluid,
+  .container-sm {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  /* Ensure content is properly centered */
+  .row {
+    margin-right: -15px !important;
+    margin-left: -15px !important;
+    justify-content: center !important;
+  }
+
+  /* Fix column padding to be equal */
+  .col, [class*="col-"] {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  /* Ensure text alignment is centered or properly aligned */
+  .text-center-mobile {
+    text-align: center !important;
+  }
+}
+
+/* Fix for specific elements that might be causing the shift */
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Reset any potential negative margins */
+  .container, .container-fluid, .row {
+    max-width: 100% !important;
+  }
+}

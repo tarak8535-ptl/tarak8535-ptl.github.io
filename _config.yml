@@ -1,0 +1,18 @@
+# Jekyll configuration for GitHub Pages
+title: Rushi Patel Portfolio
+description: Personal portfolio website
+url: https://rp.opnbyhnr.online
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+include: [".nojekyll"]
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - .gitignore
+
+# GitHub Pages settings
+github: [metadata]

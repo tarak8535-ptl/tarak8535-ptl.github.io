@@ -1,0 +1,19 @@
+/* Remove all shadows from home section */
+#home * {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  filter: none !important;
+  border: none !important;
+}
+
+/* Fix z-index issues */
+#home {
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove any background effects */
+.floating-icons {
+  opacity: 0.3;
+}

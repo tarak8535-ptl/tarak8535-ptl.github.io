@@ -1,0 +1,67 @@
+/* Card Mobile Alignment Fix
+ * Fixes the alignment issue for all card components on mobile devices
+ */
+
+@media (max-width: 767px) {
+  /* Fix card centering on mobile */
+  .modern-card,
+  .card,
+  .project-card,
+  .cert-card,
+  .linkedin-profile-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix card body padding */
+  .card-body {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Ensure container and row are properly centered */
+  .container, .row {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix column padding */
+  .col, [class*="col-"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Override any negative margins */
+  .gx-4, .gx-lg-5, .g-4, .g-lg-5 {
+    --bs-gutter-x: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 576px) {
+  .modern-card,
+  .card,
+  .project-card,
+  .cert-card,
+  .linkedin-profile-section,
+  .card-body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  .container, .row, .col, [class*="col-"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

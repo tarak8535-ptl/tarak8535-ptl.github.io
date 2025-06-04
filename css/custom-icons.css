@@ -1,0 +1,102 @@
+/* Custom Icons CSS - Using local assets */
+
+/* Replace Font Awesome icons with local assets */
+.skill-icon-aws {
+  background-image: url('../assets/icons/aws.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-docker {
+  background-image: url('../assets/icons/docker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-terraform {
+  background-image: url('../assets/icons/terraform/icons8-terraform-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-jenkins {
+  background-image: url('../assets/icons/icons8-jenkins-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-python {
+  background-image: url('../assets/icons/icons8-python-64.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-git {
+  background-image: url('../assets/icons/icons8-git-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-contact {
+  background-image: url('../assets/icons/icons8-contact-us-64.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.skill-icon-services {
+  background-image: url('../assets/icons/icons8-services-48.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* CompTIA certification icon */
+.skill-icon-comptia {
+  background-image: url('../assets/img/certifications/comptia-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}

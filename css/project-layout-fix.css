@@ -1,0 +1,33 @@
+/* Project Layout Fix */
+
+/* Create a flex row with proper alignment */
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Fix column sizing and alignment */
+.project-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+/* Ensure cards fill the column height */
+.project-card {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .project-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

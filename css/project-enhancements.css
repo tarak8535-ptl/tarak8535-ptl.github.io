@@ -1,0 +1,83 @@
+/* Project Enhancements CSS */
+
+/* Consistent key features styling */
+.key-features {
+  background: rgba(106, 90, 205, 0.1);
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-left: 3px solid #9370DB;
+}
+
+.key-features h6 {
+  color: #9370DB;
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.key-features h6 i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.key-features ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.key-features li {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Enhanced project descriptions */
+.project-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Improved project headers */
+.project-header {
+  background: linear-gradient(135deg, #483D8B, #6A5ACD);
+  padding: 15px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Better skill tags */
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.skill-tag {
+  background: rgba(106, 90, 205, 0.15);
+  color: #9370DB;
+  border-radius: 15px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(106, 90, 205, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Project card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}

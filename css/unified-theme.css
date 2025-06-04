@@ -1,0 +1,12 @@
+/* Unified Theme CSS - Dark Mode Only */
+
+/* Force dark mode on all elements */
+body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Hide any theme switcher UI */
+.theme-switcher, .theme-toggle {
+  display: none !important;
+}
