@@ -1,0 +1,41 @@
+/* Section Fix CSS */
+
+/* Fix for section transitions */
+#Experience {
+  position: relative;
+  z-index: 20;
+  padding-top: 50px;
+  margin-top: 0;
+  background-color: var(--dark-bg-secondary, #1e1e1e);
+  border-top: none;
+}
+
+.wave-divider {
+  display: block;
+  position: relative;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  z-index: 15;
+}
+
+.wave-divider svg {
+  display: block;
+  height: 50px;
+}
+
+/* Ensure content doesn't overflow */
+.masthead {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.masthead .container {
+  padding-bottom: 50px;
+}
+
+/* Clear fix for floating elements */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

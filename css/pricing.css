@@ -1,0 +1,86 @@
+/* Pricing Section Styles */
+
+.pricing-badge {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3a86ff;
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(58, 134, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(58, 134, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0);
+  }
+}
+
+.rate-display {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  background-color: rgba(58, 134, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.service-icon {
+  margin-right: 10px;
+  color: #3a86ff;
+  font-size: 1.2rem;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3a86ff, #0a66c2);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(58, 134, 255, 0.4);
+}
+
+.hourly-rate {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3a86ff;
+  margin-bottom: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
