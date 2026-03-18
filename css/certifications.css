@@ -1,0 +1,161 @@
+/* Certifications Section Styling */
+.cert-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(58, 134, 255, 0.3);
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.8), rgba(38, 38, 68, 0.9));
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.cert-logo {
+    max-height: 60px;
+    max-width: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.company-logo {
+    max-height: 60px;
+    max-width: 80px;
+    object-fit: contain;
+}
+
+.cert-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(58, 134, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cert-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cert-meta i {
+    margin-right: 5px;
+    width: 16px;
+    text-align: center;
+}
+
+.cert-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.cert-skill-tag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    background-color: rgba(58, 134, 255, 0.15);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cert-skill-tag i {
+    margin-right: 4px;
+    font-size: 0.7rem;
+}
+
+.skill-badge.small {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #f8f9fa;
+    color: #212529;
+    border-radius: 0.25rem;
+    margin-right: 0.25rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(58, 134, 255, 0.25);
+    border-color: rgba(58, 134, 255, 0.6);
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.9), rgba(38, 38, 68, 1));
+}
+
+.cert-card .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cert-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.cert-card .text-muted {
+    font-size: 0.9rem;
+}
+
+.cert-card .card-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.cert-card .btn-outline-primary {
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    background-color: rgba(58, 134, 255, 0.1);
+    border-color: rgba(58, 134, 255, 0.5);
+    color: rgba(58, 134, 255, 1);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.cert-card .btn-outline-primary:hover {
+    background-color: rgba(58, 134, 255, 0.9);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(58, 134, 255, 0.3);
+}
+
+.cert-card .btn-outline-primary img {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(93%) saturate(1352%) hue-rotate(194deg) brightness(103%) contrast(101%);
+    transition: filter 0.3s ease;
+}
+
+.cert-card .btn-outline-primary:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+#certifications {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+}
+
+@media (max-width: 768px) {
+    .cert-card {
+        margin-bottom: 1rem;
+    }
+}

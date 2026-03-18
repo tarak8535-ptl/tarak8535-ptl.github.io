@@ -1,0 +1,48 @@
+/* Project Animations CSS */
+
+/* Hover effect for project cards */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for skill tags */
+.skill-tag {
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(58, 134, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Hover effect for project links */
+.project-link {
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  color: #5a9aff;
+  text-decoration: underline;
+}
+
+/* Subtle animation for icons */
+.project-header i, .key-features i, .skill-tag i {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-header i {
+  transform: scale(1.1);
+}
+
+.key-features:hover i {
+  transform: rotate(15deg);
+}
+
+.skill-tag:hover i {
+  transform: scale(1.2);
+}

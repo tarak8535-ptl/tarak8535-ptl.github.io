@@ -1,0 +1,37 @@
+/* Project Consistency CSS */
+
+/* Ensure all project descriptions have same height */
+.project-description {
+  min-height: 4.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure all key features sections have same height */
+.key-features ul {
+  min-height: 6rem;
+}
+
+/* Ensure all project cards have same height */
+.project-card {
+  min-height: 26rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .project-description {
+    min-height: auto;
+    -webkit-line-clamp: 4;
+  }
+  
+  .key-features ul {
+    min-height: auto;
+  }
+  
+  .project-card {
+    min-height: auto;
+  }
+}

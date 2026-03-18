@@ -1,0 +1,24 @@
+/* Card Style CSS */
+
+/* Main content card styling */
+.content-card {
+  background-color: rgba(33, 37, 41, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Ensure card has proper padding */
+.card.shadow {
+  padding: 1.5rem;
+}
+
+/* Fix any shadow issues */
+#remove-shadows .card.shadow {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}

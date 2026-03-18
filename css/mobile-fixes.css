@@ -1,0 +1,135 @@
+/* Mobile Fixes - Combined CSS
+ * Consolidates multiple mobile-related fixes into a single file
+ */
+
+/* ===== MOBILE ALIGNMENT FIXES ===== */
+@media (max-width: 767px) {
+  /* Body fixes */
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Container fixes */
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Row fixes */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  
+  /* Column fixes */
+  .col, [class*="col-"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Card fixes */
+  .card,
+  .modern-card,
+  .project-card,
+  .cert-card,
+  .linkedin-profile-section,
+  .service-item,
+  .card-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Gutter fixes */
+  .gx-4, .gx-lg-5, .g-4, .g-lg-5, 
+  [class*="gx-"], [class*="g-"] {
+    --bs-gutter-x: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Masthead fix */
+  .masthead {
+    height: auto !important;
+    min-height: 120vh !important;
+  }
+  
+  /* Text alignment */
+  .text-center-mobile {
+    text-align: center !important;
+  }
+}
+
+/* ===== SMALL SCREEN FIXES ===== */
+@media (max-width: 576px) {
+  .container,
+  .container-fluid,
+  .container-sm,
+  .row,
+  .col,
+  [class*="col-"],
+  .card,
+  .modern-card,
+  .project-card,
+  .cert-card,
+  .linkedin-profile-section,
+  .service-item,
+  .card-body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+/* ===== TEXT CONTRAST FIXES ===== */
+/* Add semi-transparent background to text containers */
+.intro-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Improve contrast for all text in the masthead */
+.masthead .text-white {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Enhance company badge background */
+.company-badge {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Improve contrast for service items */
+.service-item {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Enhance skill badges visibility */
+.skill-badge {
+  background-color: rgba(244, 98, 58, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
