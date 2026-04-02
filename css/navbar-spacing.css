@@ -1,0 +1,17 @@
+/* Navbar spacing fix */
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-bg) !important;
+  transition: background-color 0.2s ease;
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 992px) {
+  header.masthead {
+    padding-top: 8rem;
+  }
+}

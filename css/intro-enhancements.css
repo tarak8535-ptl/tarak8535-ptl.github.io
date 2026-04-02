@@ -1,0 +1,33 @@
+.intro-badge {
+  padding: 15px;
+  margin-bottom: 20px !important;
+}
+
+.intro-badge p {
+  margin-bottom: 15px !important;
+}
+
+.intro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.intro-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(58, 134, 255, 0.2);
+  color: #fff;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.intro-tag i {
+  margin-right: 6px;
+}

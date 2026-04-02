@@ -1,0 +1,88 @@
+/* Home Section Font Size Adjustments */
+
+/* Main heading */
+.masthead h1 {
+  font-size: 2.5rem;
+}
+
+/* Subheading */
+.masthead h2 {
+  font-size: 1.2rem;
+}
+
+.text-smaller {
+  font-size: 1.1rem !important;
+  letter-spacing: 0.5px;
+}
+
+/* Intro badge */
+.intro-badge .lead {
+  font-size: 1.1rem;
+}
+
+/* Intro text */
+.intro-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Company badge text */
+.company-badge .small {
+  font-size: 0.8rem;
+}
+
+/* Service items */
+.service-text p {
+  font-size: 0.85rem;
+}
+
+/* Stats counter */
+.stats-counter {
+  font-size: 2rem;
+}
+
+.stats-label {
+  font-size: 0.75rem;
+}
+
+/* Skill badges */
+.skill-badge {
+  font-size: 0.7rem;
+  padding: 3px 8px;
+}
+
+/* Section headings */
+.services-section h5 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-modern.btn-xl {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .masthead h1 {
+    font-size: 2.2rem;
+  }
+  
+  .masthead h2 {
+    font-size: 1rem;
+  }
+  
+  .intro-badge .lead {
+    font-size: 1rem;
+  }
+  
+  .intro-text {
+    font-size: 0.65rem;
+  }
+  
+  .btn-modern.btn-xl {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+}

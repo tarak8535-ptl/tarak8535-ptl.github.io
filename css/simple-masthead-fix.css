@@ -1,0 +1,7 @@
+/* Simple Masthead Fix */
+@media (max-width: 767px) {
+  .masthead {
+    height: auto !important;
+    min-height: 120vh !important;
+  }
+}

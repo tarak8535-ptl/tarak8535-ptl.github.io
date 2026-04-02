@@ -1,0 +1,93 @@
+/* Section Transitions CSS */
+
+/* Smooth transition between sections */
+.section-transition {
+  position: relative;
+  overflow: visible;
+  padding-top: 20px;
+  margin-top: 0;
+  z-index: 5;
+  background-color: var(--dark-bg-secondary, #1e1e1e);
+}
+
+/* Curved section divider */
+.section-divider {
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  z-index: 5;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: scaleX(1.5);
+}
+
+/* Wave divider */
+.wave-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  margin-top: -2px;
+  z-index: 10;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.wave-divider .shape-fill {
+  fill: var(--dark-bg-secondary, #1e1e1e);
+}
+
+/* Gradient overlay for smooth transition */
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+  z-index: 2;
+}
+
+/* Specific section transitions */
+.home-to-experience {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-to-experience::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(18, 18, 18, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%);
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-divider {
+    height: 50px;
+    margin-top: -50px;
+  }
+  
+  .wave-divider svg {
+    height: 40px;
+  }
+}

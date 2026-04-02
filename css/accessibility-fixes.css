@@ -1,0 +1,73 @@
+/* Accessibility Fixes CSS */
+
+/* Hide decorative elements from screen readers */
+.decorative-icon {
+  aria-hidden: true;
+}
+
+/* Improve color contrast */
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-primary {
+  color: #0d6efd !important;
+}
+
+/* Focus styles for better keyboard navigation */
+a:focus, button:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Improve form field accessibility */
+input:focus, textarea:focus, select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Ensure sufficient text spacing */
+p, li, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+/* Ensure links are distinguishable */
+a {
+  text-decoration: underline;
+}
+
+.navbar a, .btn, .card a, footer a {
+  text-decoration: none;
+}
+
+/* Improve button contrast */
+.btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+/* Ensure proper heading hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Skip to main content link (hidden until focused) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0d6efd;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
